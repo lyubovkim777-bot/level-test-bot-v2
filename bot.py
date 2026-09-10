@@ -163,7 +163,7 @@ async def handle_answer(callback: CallbackQuery, state: FSMContext) -> None:
         f"Ваш результат: {score} из {TOTAL_QUESTIONS}\n"
         f"Ваш уровень: {ru_level} ({en_level})\n\n"
         f"{idk_line}"
-        "Чтобы записаться на бесплатное пробное занятие, напишите, пожалуйста, "
+        "Чтобы записаться на пробное занятие, напишите, пожалуйста, "
         "ваше имя."
     )
     await callback.message.edit_reply_markup(reply_markup=None)
