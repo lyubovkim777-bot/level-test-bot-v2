@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: level-test-bot-v2
+    env: python
+    plan: starter
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: GOOGLE_SCRIPT_URL
+        sync: false
+      - key: BOOKING_URL
+        sync: false
+      - key: ADMIN_CHAT_ID
+        sync: false
+      - key: WEBHOOK_URL
+        sync: false
